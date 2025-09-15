@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System zarządzania danymi pracowników</title>
+</head>
+<body>
+<h1>System zarządzania danymi pracowników</h1>
+
+<script>
+    const employee = {   // 1.Deklreacja zmiennych:
+        fullName: "Michael Jordan",
+        age: 67,
+        hiredate: "1967-06-07",
+        position: "Programista",
+        department: "IT",
+        phoneNumber: "+67 676 767 676",
+        email: "MichaelJordan.67@gmail.com",
+        isActive: true,
+    }
+// 2.Wyświetlanie w konsoli:
+    console.log("       Dane pracownika:");
+    console.log("Imię i nazwisko:", employee.fullName);
+    console.log("Wiek:", employee.age);
+    console.log("Data zatrudnienia:", employee.hiredate);
+    console.log("Stanowisko:", employee.position);
+    console.log("Dział:", employee.department);
+    console.log("Numer telefonu:", employee.phoneNumber);
+    console.log("Email:", employee.email);
+    console.log("Aktywny:", employee.isActive ? "Tak" : "Nie");
+
+    // 3.TUtaj można dodać rozszerzenia systemu:
+    employee.address = "ul. Rynek 67, 22-375 Izbica";
+    employee.employeeId = "676767";
+
+    console.log("Adres:", employee.address);
+    console.log("Adres:", employee.employeeId);
+</script>
+
+</body>
+</html>
